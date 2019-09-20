@@ -274,8 +274,8 @@ def _get_directories(dataset, input_dir):
         # Pytorch will download those datasets automatically
         return None, None
     if dataset == Dataset.IN128:
-        train_dir = os.path.join(input_dir, 'ILSVRC2012_img_train/')
-        val_dir = os.path.join(input_dir, 'ILSVRC2012_img_val/')
+        train_dir = os.path.join(input_dir, 'train')
+        val_dir = os.path.join(input_dir, 'val')
     elif dataset == Dataset.PLACES205:
         train_dir = os.path.join(input_dir, 'places205_256_train/')
         val_dir = os.path.join(input_dir, 'places205_256_val/')
